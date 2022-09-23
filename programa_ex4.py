@@ -8,7 +8,7 @@ o número de dias, horas, minutos, segundos correspondentes a esse número. Por 
     * Escreve o número de segundos 345678
     * dias : 4 horas: 0 mins: 1 segs: 18
 """
-
+#https://acervolima.com/programa-python-para-converter-segundos-em-horas-minutos-e-segundos/
 
 def dia(valor):
     dias = valor / 60
