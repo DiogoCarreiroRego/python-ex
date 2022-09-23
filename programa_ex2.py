@@ -7,6 +7,7 @@ Elementos Básicos de Programação
 e o tempo necessário para percorrer (em minutos), e calcular a velocidade média em:
     (a) Km / h
     (b) m / s
+* Calcular a velocidade média
 """
 
 
