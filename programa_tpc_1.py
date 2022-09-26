@@ -14,6 +14,7 @@ def par(numero):
 
 def primo(numero1, numero2):
     primos = 0
+    # TPC - Alterar um for para um while
     for x in range(numero1, numero2 + 1):
         if par(x):
             primos += 1
