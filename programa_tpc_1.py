@@ -15,6 +15,7 @@ def par(numero):
 def primo(numero1, numero2):
     primos = 0
     # TPC - Alterar um for para um while
+    # https://stackoverflow.com/questions/49677949/python-while-loop-range-function
     for x in range(numero1, numero2 + 1):
         if par(x):
             primos += 1
