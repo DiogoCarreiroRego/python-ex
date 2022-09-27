@@ -12,8 +12,14 @@ Após o utilizador ter inserido os 5 valores apresente:
 #print(chr(ord('A') + 32))
 
 if __name__ == '__main__':
+    user_info = []
     vendas = []
     ilhas = ['Terceira', 'Graciosa', 'Pico', 'Faial', 'São Jorge']
+
+    user_info.append(input('Qual seu nome? '))
+    user_info.append(input('Qual sua idade? '))
+    user_info.append(input('Qual sua morada? '))
+    user_info.append(input('É natural de  '))
 
     for ilha in ilhas:
         vendas.append(int(input(f'Qual é o número de vendas para {ilha}? ')))
