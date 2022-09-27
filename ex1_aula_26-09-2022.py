@@ -6,7 +6,7 @@ Após o utilizador ter inserido os 5 valores apresente:
 - Total das vendas
 - O menor valor inserido
 - O maior valor inserido
-- A média das vendas
+- A média das vendas.
 """
 
 
