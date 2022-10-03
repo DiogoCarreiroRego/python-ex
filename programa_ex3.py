@@ -30,13 +30,17 @@ def calculo(valor):
 
 
 if __name__ == '__main__':
-    nome = input('Como se chama? ')
     while True:
-        segundos = int(input('Quantos segundos? '))
+        try:
+            segundos = int(input('Quantos segundos? '))
 
-        print(f'{nome}, os {segundos} segundos equivalem a {calculo(segundos)} dias.')
+            print(f'Os {segundos} segundos equivalem a {calculo(segundos)} dias.')
 
-        continuar = input('Repetir (s | n)? ')
-        if continuar == 'n':
-            break
-    print(f'Adeus {nome}!')
+            continuar = input('Repetir (s | n)? ')
+            if continuar == 'n':
+                break
+
+        except ValueError:
+            print('Digite um valor válido')
+
+    print(f'Adeus!')
