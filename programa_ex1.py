@@ -17,14 +17,18 @@ def valor(valor1, valor2):
 
 
 if __name__ == '__main__':
-    nome = input('Como se chama? ')
     while True:
-        x = int(input('Digite o primeiro número: '))
-        y = int(input('Digite o segundo número: '))
+        try:
+            x = int(input('Digite o primeiro número: '))
+            y = int(input('Digite o segundo número: '))
 
-        print(f'({x} + 3 × {y}) × ({x} - {y}) = {valor(x, y)}')
+            print(f'({x} + 3 × {y}) × ({x} - {y}) = {valor(x, y)}')
 
-        continuar = input('Repetir (s | n)? ')
-        if continuar == 'n':
-            break
-    print(f'Adeus {nome}!')
+            continuar = input('Repetir (s | n)? ')
+            if continuar == 'n':
+                break
+
+        except ValueError:
+            print('Digite um valor válido')
+
+    print(f'Adeus!')
