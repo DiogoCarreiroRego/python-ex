@@ -21,13 +21,18 @@ def larger(valor1, valor2, valor3):
 
 if __name__ == '__main__':
     while True:
-        num1 = int(input('Qual é o primeiro número? '))
-        num2 = int(input('Qual é o segundo número? '))
-        num3 = int(input('Qual é o terceiro número? '))
+        try:
+            num1 = int(input('Qual é o primeiro número? '))
+            num2 = int(input('Qual é o segundo número? '))
+            num3 = int(input('Qual é o terceiro número? '))
 
-        print(f'O maior número é {larger(num1, num2,num3)}.')
+            print(f'O maior número é {larger(num1, num2,num3)}.')
 
-        continuar = input('Repetir (s | n)? ')
-        if continuar == 'n':
-            break
+            continuar = input('Repetir (s | n)? ')
+            if continuar == 'n':
+                break
+
+        except ValueError:
+            print('Digite um valor válido')
+
     print(f'Adeus!')
