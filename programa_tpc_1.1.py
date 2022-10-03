@@ -14,12 +14,18 @@ def par(numero):
 
 def primo(numero1, numero2):
     primos = 0
+    x = numero1
     # TPC - Alterar um for para um while
     # https://snakify.org/en/lessons/while_loop/
-    for x in range(numero1, numero2 + 1):
+    while x <= numero2:
         if par(x):
             primos += 1
             print(x)
+        x += 1
+    """for x in range(numero1, numero2 + 1):
+        if par(x):
+            primos += 1
+            print(x)"""
 
     return primos
 
