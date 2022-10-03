@@ -20,11 +20,16 @@ def numero(valor):
 
 if __name__ == '__main__':
     while True:
-        num = int(input('Qual é o número? '))
+        try:
+            num = int(input('Qual é o número? '))
 
-        print(f'O número invertido é {numero(num)}.')
+            print(f'O número invertido é {numero(num)}.')
 
-        continuar = input('Repetir (s | n)? ')
-        if continuar == 'n':
-            break
+            continuar = input('Repetir (s | n)? ')
+            if continuar == 'n':
+                break
+
+        except ValueError:
+            print('Digite uma valor válido')
+
     print(f'Adeus!')
