@@ -22,12 +22,17 @@ def salario(valor1, valor2):
 
 if __name__ == '__main__':
     while True:
-        hora_semanal = int(input('Quantas horas trabalhou esta semana? '))
-        salario_hora = int(input('Qual é o seu salário por hora? '))
+        try:
+            hora_semanal = int(input('Quantas horas trabalhou esta semana? '))
+            salario_hora = int(input('Qual é o seu salário por hora? '))
 
-        print(f'O seu salário é {salario(hora_semanal, salario_hora)}€.')
+            print(f'O seu salário é {salario(hora_semanal, salario_hora)}€.')
 
-        continuar = input('Repetir (s | n)? ')
-        if continuar == 'n':
-            break
+            continuar = input('Repetir (s | n)? ')
+            if continuar == 'n':
+                break
+
+        except ValueError:
+            print('Digite um valor válido')
+
     print(f'Adeus!')
