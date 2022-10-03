@@ -13,7 +13,6 @@ if __name__ == '__main__':
             x = int(input('Qual o valor de x: '))
             n = int(input('Qual o valor de n: '))
 
-
             continuar = input('Repetir (s | n)? ')
             if continuar == 'n':
                 break

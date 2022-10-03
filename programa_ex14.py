@@ -12,13 +12,19 @@ def digito(valor):
 
     return digitos
 
+
 if __name__ == '__main__':
     while True:
-        num = int(input('Qual é o número? '))
+        try:
+            num = int(input('Qual é o número? '))
 
-        print(f'O número {num} contém {digito(num)} digitos.')
+            print(f'O número {num} contém {digito(num)} digitos.')
 
-        continuar = input('Repetir (s | n)? ')
-        if continuar == 'n':
-            break
+            continuar = input('Repetir (s | n)? ')
+            if continuar == 'n':
+                break
+
+        except ValueError:
+            print('Digite um valor válido')
+
     print(f'Adeus!')
