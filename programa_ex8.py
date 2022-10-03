@@ -28,10 +28,10 @@ if __name__ == '__main__':
         try:
             segundos = int(input('Quantas segundos? '))
 
-            print(f'{segundos} segundos correspondem a {dia(segundos)} dias.')
-
             if segundos < 0:
                 break
+
+            print(f'{segundos} segundos correspondem a {dia(segundos)} dias.')
 
         except ValueError:
             print('Digite um valor válido')
