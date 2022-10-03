@@ -20,11 +20,16 @@ def countZeros(numero):
 
 if __name__ == '__main__':
     while True:
-        num = int(input('Digite o número inicial: '))
+        try:
+            num = int(input('Digite o número inicial: '))
 
-        print(f'O número {num} tem {countZeros(num)} zeros.')
+            print(f'O número {num} tem {countZeros(num)} zeros.')
 
-        continuar = input('Repetir [s | n]? ')
-        if continuar == 'n':
-            break
+            continuar = input('Repetir [s | n]? ')
+            if continuar == 'n':
+                break
+
+        except ValueError:
+            print('Digite um valor válido')
+
     print(f'Adeus!')
