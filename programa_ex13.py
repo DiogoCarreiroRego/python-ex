@@ -17,11 +17,16 @@ def cal(valor):
 
 if __name__ == '__main__':
     while True:
-        num = int(input('Qual é o número? '))
+        try:
+            num = int(input('Qual é o número? '))
 
-        cal(num)
+            cal(num)
 
-        continuar = input('Repetir (s | n)? ')
-        if continuar == 'n':
-            break
+            continuar = input('Repetir (s | n)? ')
+            if continuar == 'n':
+                break
+
+        except ValueError:
+            print('Digite um valor válido')
+
     print(f'Adeus!')
