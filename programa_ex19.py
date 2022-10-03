@@ -28,11 +28,16 @@ def nota(valor):
 
 if __name__ == '__main__':
     while True:
-        euro = input('Qual é a quantidade em euros? ')
+        try:
+            euro = input('Qual é a quantidade em euros? ')
 
-        nota(euro)
+            nota(euro)
 
-        continuar = input('Repetir (s | n)? ')
-        if continuar == 'n':
-            break
+            continuar = input('Repetir (s | n)? ')
+            if continuar == 'n':
+                break
+
+        except ValueError:
+            print('Digite um valor válido')
+
     print(f'Adeus!')
