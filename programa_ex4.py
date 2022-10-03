@@ -10,6 +10,7 @@ o número de dias, horas, minutos, segundos correspondentes a esse número. Por 
 """
 #https://acervolima.com/programa-python-para-converter-segundos-em-horas-minutos-e-segundos/
 
+
 def dia(valor):
     dias = valor / 60
     dias = dias / 60
@@ -41,11 +42,16 @@ def seg(valor):
 
 if __name__ == '__main__':
     while True:
-        segundos = int(input('Quantos segundos? '))
+        try:
+            segundos = int(input('Quantos segundos? '))
 
-        print(f'dias: {int(dia(segundos))} mins: {int(hour(segundos))} mins: {int(min(segundos))} segs: {int(seg(segundos))}')
+            print(f'dias: {int(dia(segundos))} hours: {int(hour(segundos))} mins: {int(min(segundos))} segs: {int(seg(segundos))}')
 
-        continuar = input('Repetir (s | n)? ')
-        if continuar == 'n':
-            break
+            continuar = input('Repetir (s | n)? ')
+            if continuar == 'n':
+                break
+
+        except ValueError:
+            print('Digite um valor válido')
+
     print(f'Adeus!')
