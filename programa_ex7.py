@@ -12,8 +12,10 @@ extraordinárias as quais são pagas a dobrar.
 
 
 def salario(valor1, valor2):
-    if hora_semanal > 40:
-        valor2 *= 2
+    if valor1 > 40:
+        extra = valor1 - 40
+        extra *= 2
+        valor1 = 40 + extra
 
     salario_semanal = valor1 * valor2
 
