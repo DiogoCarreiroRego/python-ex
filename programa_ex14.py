@@ -8,7 +8,14 @@ Elementos Básicos de Programação
 
 
 def digito(valor):
-    digitos = len(str(valor))
+    # Contar o número de digitos
+    #digitos = len(str(valor))
+
+    # Soma de seus digitos
+    valor = str(valor)
+    digitos = 0
+    for x in range(len(valor)):
+        digitos += int(valor[x])
 
     return digitos
 
@@ -18,7 +25,7 @@ if __name__ == '__main__':
         try:
             num = int(input('Qual é o número? '))
 
-            print(f'O número {num} contém {digito(num)} digitos.')
+            print(f'O número {num} contém {digito(num)} em soma de seus digitos.')
 
             continuar = input('Repetir (s | n)? ')
             if continuar == 'n':
