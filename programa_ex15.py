@@ -26,5 +26,5 @@ if __name__ == '__main__':
     for x in range(len(num_list)):
         num += str(num_list[x])
 
-    print(f'O número é: {num}')
+    print(f'O número é: {int(num)}')
     print(f'Adeus!')
