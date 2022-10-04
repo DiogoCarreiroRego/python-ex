@@ -11,7 +11,7 @@ zeros seguintes. Por exemplo:
 
 
 def countZeros(numero):
-    count = 0;
+    count = 0
     while numero % 10 == 0:
         count += 1
         numero /= 10
