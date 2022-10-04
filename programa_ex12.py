@@ -3,7 +3,7 @@ Capítulo 2
 Elementos Básicos de Programação
 12º Exercício
 
-- Um programa que
+- Um programa que calcula o valor da soma.
 """
 
 
